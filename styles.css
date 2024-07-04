@@ -105,14 +105,18 @@ blockquote {
 
 .gallery {
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
+    justify-content: center;
 }
 
 .gallery img {
     max-width: 100px;
+    height: auto;
     border: 2px solid #8b0000;
     padding: 5px;
     background-color: white;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
 }
 
 footer {
