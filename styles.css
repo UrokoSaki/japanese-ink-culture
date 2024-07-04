@@ -150,10 +150,6 @@ th {
     color: #ffd700;
 }
 
-tbody tr:nth-child(even) {
-    background-color: #f2f2f2;
-}
-
 /* עיצוב מותאם לנייד */
 @media (max-width: 768px) {
     header h1 {
