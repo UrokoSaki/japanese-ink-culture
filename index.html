@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Japanese Ink Culture - Discover the World of Japanese Tattoos</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet"> <!-- הוספת הפונט -->
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
 
     <!-- Meta Tags for SEO -->
     <meta name="description" content="Explore the rich history and intricate designs of Japanese tattoos. Discover the meanings behind popular Japanese tattoos and find inspiration for your next piece.">
@@ -33,10 +33,30 @@
 
       gtag('config', 'G-L008T1RWCM');
     </script>
-
-    <!-- Google AdSense -->
+    
+    <!-- AdSense Code -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4721103073708194"
-     crossorigin="anonymous"></script>
+         crossorigin="anonymous"></script>
+
+    <!-- Cookie Consent Script -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            if (!localStorage.getItem('cookieConsent')) {
+                var consentBanner = document.createElement('div');
+                consentBanner.innerHTML = `
+                    <div id="cookie-consent-banner" style="position: fixed; bottom: 0; width: 100%; background: #8b0000; color: #ffd700; text-align: center; padding: 10px;">
+                        We use cookies to ensure you get the best experience. By using our site, you agree to our <a href="privacy.html" style="color: #ffcc00;">Privacy Policy</a>.
+                        <button id="accept-cookies" style="margin-left: 10px; padding: 5px 10px; background: #ffd700; color: #8b0000; border: none; cursor: pointer;">Accept</button>
+                    </div>
+                `;
+                document.body.appendChild(consentBanner);
+                document.getElementById('accept-cookies').addEventListener('click', function() {
+                    localStorage.setItem('cookieConsent', 'true');
+                    document.getElementById('cookie-consent-banner').style.display = 'none';
+                });
+            }
+        });
+    </script>
 </head>
 <body>
     <header>
