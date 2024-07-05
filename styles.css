@@ -150,6 +150,11 @@ th {
     color: #ffd700;
 }
 
+/* הסרת הרקע האפור מהשורות */
+tbody tr:nth-child(even) {
+    background-color: #ffffff; /* רקע לבן */
+}
+
 /* עיצוב מותאם לנייד */
 @media (max-width: 768px) {
     header h1 {
