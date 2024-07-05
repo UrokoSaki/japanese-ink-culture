@@ -1,113 +1,201 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Types of Japanese Tattoos - Japanese Ink Culture</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet"> <!-- הוספת הפונט -->
+/* עיצוב קיים */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #8b0000; /* רקע אדום כהה */
+    color: #ffd700; /* טקסט זהב */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
 
-    <!-- Meta Tags for SEO -->
-    <meta name="description" content="Explore various types of traditional Japanese tattoos including Irezumi, Horimono, and Tebori. Learn about their history, meanings, and see examples.">
-    <meta name="keywords" content="Japanese tattoos, Irezumi, Horimono, Tebori, traditional Japanese tattoos, tattoo meanings, tattoo history, Japanese tattoo styles, tattoo designs">
-    <meta name="author" content="Japanese Ink Culture">
+header {
+    background-color: #8b0000; /* רקע אדום כהה */
+    color: #ffd700; /* צבע זהב לכותרת */
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+}
+
+header h1 {
+    font-family: 'Rock Salt', cursive; /* פונט ייחודי */
+    font-size: 2.5em;
+    margin: 0;
+    text-shadow: 2px 2px #000000; /* הוספת צל לכותרת */
+    color: #ffd700; /* צבע זהב */
+    border: 3px solid #000000; /* גבול שחור */
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5); /* רקע שחור שקוף */
+    display: inline-block;
+}
+
+nav {
+    background-color: #8b0000; /* רקע אדום כהה */
+    color: #ffd700; /* טקסט זהב */
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav a {
+    color: #ffd700; /* צבע זהב */
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffcc00; /* צבע זהב בהיר בעת ריחוף */
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+    background-color: #ffffff; /* רקע לבן */
+    color: #000000; /* טקסט שחור */
+}
+
+h2 {
+    color: #8b0000; /* כותרות בצבע אדום כהה */
+}
+
+h3 {
+    color: #8b0000; /* כותרות בצבע אדום כהה */
+}
+
+.timeline {
+    list-style-type: none;
+    padding: 0;
+}
+
+.timeline li {
+    margin: 10px 0;
+    color: #000000; /* טקסט שחור */
+}
+
+blockquote {
+    font-style: italic;
+    color: #555;
+    border-left: 5px solid #8b0000;
+    margin: 20px 0;
+    padding-left: 10px;
+}
+
+.artist {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.artist-image {
+    max-width: 150px;
+    margin-right: 20px;
+}
+
+.tattoo-style {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.tattoo-image {
+    max-width: 200px;
+    margin-right: 20px;
+}
+
+.gallery {
+    display: flex;
+    gap: 10px;
+}
+
+.gallery img {
+    max-width: 100px;
+    border: 2px solid #8b0000;
+    padding: 5px;
+    background-color: white;
+}
+
+footer {
+    background-color: #8b0000; /* רקע אדום כהה */
+    color: #ffd700; /* צבע זהב */
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    flex-shrink: 0;
+}
+
+/* הוספת סגנונות לטבלה */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: #ffffff; /* רקע לבן */
+}
+
+table, th, td {
+    border: 2px solid #8b0000;
+    color: #000000; /* טקסט שחור */
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    font-size: 1.1em;
+}
+
+th {
+    background-color: #8b0000;
+    color: #ffd700;
+}
+
+/* הסרת הרקע האפור מהשורות */
+tbody tr:nth-child(even) {
+    background-color: #ffffff; /* רקע לבן */
+}
+
+/* עיצוב מותאם לנייד */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em; /* הקטנת גודל הכותרת לנייד */
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .tattoo-style {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .tattoo-image {
+        max-width: 100%;
+        margin: 0 0 10px 0;
+    }
+
+    .gallery {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .gallery img {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    footer {
+        padding: 20px 0;
+    }
+
+    table, th, td {
+        font-size: 1em; /* התאמת גודל טקסט בטבלה לנייד */
+    }
+}
     
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Types of Japanese Tattoos - Japanese Ink Culture">
-    <meta property="og:description" content="Explore various types of traditional Japanese tattoos including Irezumi, Horimono, and Tebori. Learn about their history, meanings, and see examples.">
-    <meta property="og:image" content="images/irezumi1.jpg">
-    <meta property="og:url" content="http://www.japaneseinkculture.com/types.html">
-    
-    <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Types of Japanese Tattoos - Japanese Ink Culture">
-    <meta name="twitter:description" content="Explore various types of traditional Japanese tattoos including Irezumi, Horimono, and Tebori. Learn about their history, meanings, and see examples.">
-    <meta name="twitter:image" content="images/irezumi1.jpg">
-    
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L008T1RWCM"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-L008T1RWCM');
-    </script>
-
-    <!-- Google AdSense -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4721103073708194"
-     crossorigin="anonymous"></script>
-
-    <!-- Cookie Consent Script -->
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            if (!localStorage.getItem('cookieConsent')) {
-                var consentBanner = document.createElement('div');
-                consentBanner.innerHTML = `
-                    <div id="cookie-consent-banner" style="position: fixed; bottom: 0; width: 100%; background: #8b0000; color: #ffd700; text-align: center; padding: 10px;">
-                        We use cookies to ensure you get the best experience. By using our site, you agree to our <a href="privacy.html" style="color: #ffcc00;">Privacy Policy</a>.
-                        <button id="accept-cookies" style="margin-left: 10px; padding: 5px 10px; background: #ffd700; color: #8b0000; border: none; cursor: pointer;">Accept</button>
-                    </div>
-                `;
-                document.body.appendChild(consentBanner);
-                document.getElementById('accept-cookies').addEventListener('click', function() {
-                    localStorage.setItem('cookieConsent', 'true');
-                    document.getElementById('cookie-consent-banner').style.display = 'none';
-                });
-            }
-        });
-    </script>
-</head>
-<body>
-    <header>
-        <h1>Japanese Ink Culture</h1>
-    </header>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="types.html">Types of Japanese Tattoos</a>
-        <a href="meanings.html">Tattoo Meanings</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-    <main>
-        <h2 class="page-title">Types of Japanese Tattoos</h2>
-        <div class="tattoo-style">
-            <img src="images/irezumi1.jpg" alt="Irezumi" class="tattoo-image">
-            <div>
-                <h3>Irezumi</h3>
-                <p>Irezumi are traditional full-body tattoos with intricate designs. These tattoos often cover large portions of the body and are known for their detailed and elaborate artwork.</p>
-                <div class="gallery">
-                    <img src="images/irezumi2.jpg" alt="Irezumi example 1">
-                    <img src="images/irezumi3.jpg" alt="Irezumi example 2">
-                </div>
-            </div>
-        </div>
-        <div class="tattoo-style">
-            <img src="images/horimono1.jpg" alt="Horimono" class="tattoo-image">
-            <div>
-                <h3>Horimono</h3>
-                <p>Horimono is another term for traditional Japanese tattoos, often used interchangeably with Irezumi. These tattoos are also full-body and feature similar intricate designs.</p>
-                <div class="gallery">
-                    <img src="images/horimono2.jpg" alt="Horimono example 1">
-                    <img src="images/horimono3.jpg" alt="Horimono example 2">
-                </div>
-            </div>
-        </div>
-        <div class="tattoo-style">
-            <img src="images/tebori1.jpg" alt="Tebori" class="tattoo-image">
-            <div>
-                <h3>Tebori</h3>
-                <p>Tebori tattoos are hand-poked, created using traditional tools. This method is known for its precise and detailed results, and it requires a high level of skill from the tattoo artist.</p>
-                <div class="gallery">
-                    <img src="images/tebori2.jpg" alt="Tebori example 1">
-                    <img src="images/tebori3.jpg" alt="Tebori example 2">
-                </div>
-            </div>
-        </div>
-    </main>
-    <footer>
-        <p>&copy; 2024 Japanese Ink Culture | <a href="privacy.html" style="color: #ffd700;">Privacy Policy</a> | <a href="terms.html" style="color: #ffd700;">Terms of Use</a></p>
-    </footer>
-</body>
-</html>
