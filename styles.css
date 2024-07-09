@@ -1,32 +1,32 @@
-/* עיצוב קיים */
+/* Existing Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #8b0000; /* רקע אדום כהה */
-    color: #ffd700; /* טקסט זהב */
+    background-color: #8b0000; /* Dark red background */
+    color: #ffd700; /* Gold text */
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
 header {
-    background-color: #8b0000; /* רקע אדום כהה */
-    color: #ffd700; /* צבע זהב לכותרת */
+    background-color: #8b0000; /* Dark red background */
+    color: #ffd700; /* Gold color for header */
     padding: 20px 0;
     text-align: center;
     position: relative;
 }
 
 header h1 {
-    font-family: 'Rock Salt', cursive; /* פונט ייחודי */
+    font-family: 'Rock Salt', cursive; /* Unique font */
     font-size: 2.5em;
     margin: 0;
-    text-shadow: 2px 2px #000000; /* הוספת צל לכותרת */
-    color: #ffd700; /* צבע זהב */
-    border: 3px solid #000000; /* גבול שחור */
+    text-shadow: 2px 2px #000000; /* Adding shadow to header */
+    color: #ffd700; /* Gold color */
+    border: 3px solid #000000; /* Black border */
     padding: 10px;
-    background-color: rgba(0, 0, 0, 0.5); /* רקע שחור שקוף */
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent black background */
     display: inline-block;
 }
 
@@ -39,8 +39,8 @@ header h1 {
 }
 
 nav {
-    background-color: #8b0000; /* רקע אדום כהה */
-    color: #ffd700; /* טקסט זהב */
+    background-color: #8b0000; /* Dark red background */
+    color: #ffd700; /* Gold text */
     text-align: center;
     padding: 10px 0;
 }
@@ -58,28 +58,28 @@ nav .nav-links li {
 }
 
 nav .nav-links a {
-    color: #ffd700; /* צבע זהב */
+    color: #ffd700; /* Gold color */
     text-decoration: none;
     font-weight: bold;
 }
 
 nav .nav-links a:hover {
-    color: #ffcc00; /* צבע זהב בהיר בעת ריחוף */
+    color: #ffcc00; /* Bright gold color on hover */
 }
 
 main {
     flex: 1;
     padding: 20px;
-    background-color: #ffffff; /* רקע לבן */
-    color: #000000; /* טקסט שחור */
+    background-color: #ffffff; /* White background */
+    color: #000000; /* Black text */
 }
 
 h2 {
-    color: #8b0000; /* כותרות בצבע אדום כהה */
+    color: #8b0000; /* Dark red for headings */
 }
 
 h3 {
-    color: #8b0000; /* כותרות בצבע אדום כהה */
+    color: #8b0000; /* Dark red for headings */
 }
 
 .timeline {
@@ -89,7 +89,7 @@ h3 {
 
 .timeline li {
     margin: 10px 0;
-    color: #000000; /* טקסט שחור */
+    color: #000000; /* Black text */
 }
 
 blockquote {
@@ -135,8 +135,8 @@ blockquote {
 }
 
 footer {
-    background-color: #8b0000; /* רקע אדום כהה */
-    color: #ffd700; /* צבע זהב */
+    background-color: #8b0000; /* Dark red background */
+    color: #ffd700; /* Gold color */
     text-align: center;
     padding: 10px 0;
     position: relative;
@@ -145,17 +145,17 @@ footer {
     flex-shrink: 0;
 }
 
-/* הוספת סגנונות לטבלה */
+/* Adding styles for the table */
 table {
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 20px;
-    background-color: #ffffff; /* רקע לבן */
+    background-color: #ffffff; /* White background */
 }
 
 table, th, td {
     border: 2px solid #8b0000;
-    color: #000000; /* טקסט שחור */
+    color: #000000; /* Black text */
 }
 
 th, td {
@@ -169,15 +169,15 @@ th {
     color: #ffd700;
 }
 
-/* הסרת הרקע האפור מהשורות */
+/* Removing gray background from rows */
 tbody tr:nth-child(even) {
-    background-color: #ffffff; /* רקע לבן */
+    background-color: #ffffff; /* White background */
 }
 
-/* עיצוב מותאם לנייד */
+/* Mobile-friendly styles */
 @media (max-width: 768px) {
     header h1 {
-        font-size: 2em; /* הקטנת גודל הכותרת לנייד */
+        font-size: 2em; /* Reducing header size for mobile */
     }
 
     .menu-icon {
@@ -228,6 +228,6 @@ tbody tr:nth-child(even) {
     }
 
     table, th, td {
-        font-size: 1em; /* התאמת גודל טקסט בטבלה לנייד */
+        font-size: 1em; /* Adjusting text size in table for mobile */
     }
 }
