@@ -79,7 +79,16 @@
     </nav>
     <main>
         <h2 class="page-title">Gallery</h2>
-        <p>Coming soon...</p>
+        <div id="gallery-container" class="gallery">
+            <?php
+                $directory = "images/gallery/";
+                $images = glob($directory . "*.{jpg,png,gif}", GLOB_BRACE);
+
+                foreach($images as $image) {
+                    echo '<img src="'.$image.'" alt="Tattoo Image" class="gallery-image">';
+                }
+            ?>
+        </div>
     </main>
     <footer>
         <p>&copy; 2024 Japanese Ink Culture | <a href="privacy.html" style="color: #ffd700;">Privacy Policy</a> | <a href="terms.html" style="color: #ffd700;">Terms of Use</a></p>
