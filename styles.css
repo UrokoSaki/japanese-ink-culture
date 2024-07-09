@@ -30,6 +30,14 @@ header h1 {
     display: inline-block;
 }
 
+.menu-icon {
+    display: none;
+    font-size: 2em;
+    cursor: pointer;
+    color: #ffd700;
+    padding: 10px;
+}
+
 nav {
     background-color: #8b0000; /* רקע אדום כהה */
     color: #ffd700; /* טקסט זהב */
@@ -37,14 +45,25 @@ nav {
     padding: 10px 0;
 }
 
-nav a {
-    color: #ffd700; /* צבע זהב */
+nav .nav-links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav .nav-links li {
     margin: 0 10px;
+}
+
+nav .nav-links a {
+    color: #ffd700; /* צבע זהב */
     text-decoration: none;
     font-weight: bold;
 }
 
-nav a:hover {
+nav .nav-links a:hover {
     color: #ffcc00; /* צבע זהב בהיר בעת ריחוף */
 }
 
@@ -161,9 +180,23 @@ tbody tr:nth-child(even) {
         font-size: 2em; /* הקטנת גודל הכותרת לנייד */
     }
 
-    nav a {
+    .menu-icon {
         display: block;
+    }
+
+    nav .nav-links {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    nav .nav-links li {
         margin: 10px 0;
+    }
+
+    nav .nav-links a {
+        font-size: 1.2em;
     }
 
     .tattoo-style {
@@ -198,4 +231,3 @@ tbody tr:nth-child(even) {
         font-size: 1em; /* התאמת גודל טקסט בטבלה לנייד */
     }
 }
-    
