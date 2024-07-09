@@ -60,6 +60,25 @@
             const navLinks = document.querySelector('.nav-links');
             navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
         }
+        // Function to dynamically load images
+        function loadGallery() {
+            const galleryContainer = document.getElementById('gallery-container');
+            const images = [
+                'image1.jpg',
+                'image2.jpg',
+                'image3.jpg',
+                'image4.jpg',
+                'image5.jpg'
+            ];
+            images.forEach(image => {
+                const imgElement = document.createElement('img');
+                imgElement.src = `images/gallery/${image}`;
+                imgElement.alt = 'Tattoo Image';
+                imgElement.classList.add('gallery-image');
+                galleryContainer.appendChild(imgElement);
+            });
+        }
+        document.addEventListener('DOMContentLoaded', loadGallery);
     </script>
 </head>
 <body>
@@ -72,23 +91,14 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="types.html">Types of Japanese Tattoos</a></li>
             <li><a href="meanings.html">Tattoo Meanings</a></li>
-            <li><a href="gallery.php">Gallery</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
     <main>
         <h2 class="page-title">Gallery</h2>
-        <div id="gallery-container" class="gallery">
-            <?php
-                $directory = "images/gallery/";
-                $images = glob($directory . "*.{jpg,png,gif}", GLOB_BRACE);
-
-                foreach($images as $image) {
-                    echo '<img src="'.$image.'" alt="Tattoo Image" class="gallery-image">';
-                }
-            ?>
-        </div>
+        <div id="gallery-container" class="gallery"></div>
     </main>
     <footer>
         <p>&copy; 2024 Japanese Ink Culture | <a href="privacy.html" style="color: #ffd700;">Privacy Policy</a> | <a href="terms.html" style="color: #ffd700;">Terms of Use</a></p>
