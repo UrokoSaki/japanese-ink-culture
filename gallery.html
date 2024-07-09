@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery - Japanese Ink Culture</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet"> <!-- הוספת הפונט -->
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet"> <!-- Adding font -->
 
     <!-- Meta Tags for SEO -->
     <meta name="description" content="Explore our gallery of traditional Japanese tattoos. See stunning examples of Irezumi, Horimono, and Tebori styles.">
@@ -56,19 +56,26 @@
                 });
             }
         });
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+        }
     </script>
 </head>
 <body>
     <header>
         <h1>Japanese Ink Culture</h1>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
     </header>
     <nav>
-        <a href="index.html">Home</a>
-        <a href="types.html">Types of Japanese Tattoos</a>
-        <a href="meanings.html">Tattoo Meanings</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="types.html">Types of Japanese Tattoos</a></li>
+            <li><a href="meanings.html">Tattoo Meanings</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
     </nav>
     <main>
         <h2 class="page-title">Gallery</h2>
