@@ -72,7 +72,7 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="types.html">Types of Japanese Tattoos</a></li>
             <li><a href="meanings.html">Tattoo Meanings</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="gallery.php">Gallery</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
