@@ -57,6 +57,12 @@
             }
         });
     </script>
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -112,11 +118,5 @@
     <footer>
         <p>&copy; 2024 Japanese Ink Culture | <a href="privacy.html" style="color: #ffd700;">Privacy Policy</a> | <a href="terms.html" style="color: #ffd700;">Terms of Use</a></p>
     </footer>
-    <script>
-        function toggleMenu() {
-            const navLinks = document.querySelector('.nav-links');
-            navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
-        }
-    </script>
 </body>
 </html>
