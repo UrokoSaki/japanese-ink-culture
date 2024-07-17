@@ -5,11 +5,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Terms of Service - Japanese Ink Culture</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+
+    <!-- Meta Tags for SEO -->
+    <meta name="description" content="Review the terms of service for Japanese Ink Culture. By accessing our website, you agree to these terms.">
+    <meta name="keywords" content="Terms of Service, Japanese Ink Culture, website terms, use of site, intellectual property">
+    <meta name="author" content="Japanese Ink Culture">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Terms of Service - Japanese Ink Culture">
+    <meta property="og:description" content="Review the terms of service for Japanese Ink Culture. By accessing our website, you agree to these terms.">
+    <meta property="og:image" content="images/irezumi1.jpg">
+    <meta property="og:url" content="http://www.japaneseinkculture.com/terms.html">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Terms of Service - Japanese Ink Culture">
+    <meta name="twitter:description" content="Review the terms of service for Japanese Ink Culture. By accessing our website, you agree to these terms.">
+    <meta name="twitter:image" content="images/irezumi1.jpg">
+
+    <!-- Canonical Tag -->
+    <link rel="canonical" href="https://www.japaneseinkculture.com/terms.html">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L008T1RWCM"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-L008T1RWCM');
+    </script>
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4721103073708194" crossorigin="anonymous"></script>
+
+    <!-- Cookie Consent Script -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            if (!localStorage.getItem('cookieConsent')) {
+                var consentBanner = document.createElement('div');
+                consentBanner.innerHTML = `
+                    <div id="cookie-consent-banner" style="position: fixed; bottom: 0; width: 100%; background: #8b0000; color: #ffd700; text-align: center; padding: 10px;">
+                        We use cookies to ensure you get the best experience. By using our site, you agree to our <a href="privacy.html" style="color: #ffcc00;">Privacy Policy</a> and <a href="terms.html" style="color: #ffcc00;">Terms of Use</a>.
+                        <button id="accept-cookies" style="margin-left: 10px; padding: 5px 10px; background: #ffd700; color: #8b0000; border: none; cursor: pointer;">Accept</button>
+                    </div>
+                `;
+                document.body.appendChild(consentBanner);
+                document.getElementById('accept-cookies').addEventListener('click', function() {
+                    localStorage.setItem('cookieConsent', 'true');
+                    document.getElementById('cookie-consent-banner').style.display = 'none';
+                });
+            }
+        });
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+        }
+    </script>
 </head>
 <body>
     <header>
         <h1>Terms of Service</h1>
     </header>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="types.html">Types of Japanese Tattoos</a></li>
+            <li><a href="meanings.html">Tattoo Meanings</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
     <main>
         <section>
             <h2>Introduction</h2>
@@ -33,7 +101,7 @@
         </section>
     </main>
     <footer>
-        <p>&copy; 2024 Japanese Ink Culture | <a href="privacy.html" style="color: #ffd700;">Privacy Policy</a></p>
+        <p>&copy; 2024 Japanese Ink Culture | <a href="privacy.html" style="color: #ffd700;">Privacy Policy</a> | <a href="terms.html" style="color: #ffd700;">Terms of Use</a></p>
     </footer>
 </body>
 </html>
