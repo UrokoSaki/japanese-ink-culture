@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - Japanese Ink Culture</title>
-    
+
     <!-- Preload CSS and Fonts -->
     <link rel="preload" href="styles.css" as="style">
     <link rel="stylesheet" href="styles.css">
@@ -33,18 +33,18 @@
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-L008T1RWCM" defer></script>
-    <script defer>
+    <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'G-L008T1RWCM');
     </script>
-
-    <!-- Google AdSense -->
+    
+    <!-- AdSense Code -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4721103073708194" crossorigin="anonymous" defer></script>
 
     <!-- Cookie Consent Script -->
-    <script defer>
+    <script>
         document.addEventListener("DOMContentLoaded", function() {
             if (!localStorage.getItem('cookieConsent')) {
                 var consentBanner = document.createElement('div');
@@ -61,16 +61,23 @@
                 });
             }
         });
-        function toggleMenu() {
-            const navLinks = document.querySelector('.nav-links');
-            navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
-        }
     </script>
 </head>
 <body>
     <header>
-        <!-- Add your navigation and header content here -->
+        <h1>Japanese Ink Culture</h1>
+        <div class="menu-icon" onclick="toggleMenu()" aria-label="Toggle menu">&#9776;</div>
     </header>
+    <nav>
+        <ul class="nav-links" aria-label="Main navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="types.html">Types of Japanese Tattoos</a></li>
+            <li><a href="meanings.html">Tattoo Meanings</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
     <main>
         <h1>Contact Us</h1>
         <form action="contact_form_handler.php" method="post" class="contact-form">
@@ -87,7 +94,13 @@
         </form>
     </main>
     <footer>
-        <!-- Add your footer content here -->
+        <p>&copy; 2024 Japanese Ink Culture | <a href="privacy.html" style="color: #ffd700;">Privacy Policy</a> | <a href="terms.html" style="color: #ffd700;">Terms of Use</a></p>
     </footer>
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+        }
+    </script>
 </body>
 </html>
