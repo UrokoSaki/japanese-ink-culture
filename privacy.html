@@ -12,6 +12,7 @@
 <body>
     <header>
         <h1>Privacy Policy</h1>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
     </header>
     <nav>
         <ul class="nav-links">
@@ -59,5 +60,11 @@
     <footer>
         <p>&copy; 2024 Japanese Ink Culture | <a href="privacy.html" style="color: #ffd700;">Privacy Policy</a> | <a href="terms.html" style="color: #ffd700;">Terms of Use</a></p>
     </footer>
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+        }
+    </script>
 </body>
 </html>
