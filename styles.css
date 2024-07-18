@@ -1,4 +1,10 @@
 /* Existing Styles */
+@font-face {
+    font-family: 'Rock Salt';
+    font-display: swap;
+    src: url('https://fonts.gstatic.com/s/rocksalt/v10/MwQ0bhv11fWD6QsAVOZbsA.woff2') format('woff2');
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
