@@ -78,66 +78,64 @@ main {
     padding: 20px;
     background-color: #ffffff; /* White background */
     color: #000000; /* Black text */
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px; /* Adding rounded corners */
 }
 
 h2 {
     color: #8b0000; /* Dark red for headings */
-}
-
-h3 {
-    color: #8b0000; /* Dark red for headings */
-}
-
-.timeline {
-    list-style-type: none;
-    padding: 0;
-}
-
-.timeline li {
-    margin: 10px 0;
-    color: #000000; /* Black text */
-}
-
-blockquote {
-    font-style: italic;
-    color: #555;
-    border-left: 5px solid #8b0000;
-    margin: 20px 0;
-    padding-left: 10px;
-}
-
-.artist {
-    display: flex;
-    align-items: center;
+    text-align: center;
     margin-bottom: 20px;
 }
 
-.artist-image {
-    max-width: 150px;
-    margin-right: 20px;
-}
-
-.tattoo-style {
-    display: flex;
-    align-items: center;
+p {
+    text-align: center;
+    font-size: 1.2em;
     margin-bottom: 20px;
 }
 
-.tattoo-image {
-    max-width: 200px;
-    margin-right: 20px;
-}
-
-.gallery {
+.contact-form {
     display: flex;
-    gap: 10px;
+    flex-direction: column;
+    gap: 15px;
 }
 
-.gallery img {
-    max-width: 100px;
+.contact-form .form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
     border: 2px solid #8b0000;
-    padding: 5px;
-    background-color: white;
+    border-radius: 5px;
+    font-size: 1em;
+    color: #000000; /* Black text */
+    background-color: #ffffff; /* White background */
+}
+
+.contact-form button {
+    background-color: #8b0000; /* Dark red background */
+    color: #ffd700; /* Gold text */
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    align-self: flex-end;
+}
+
+.contact-form button:hover {
+    background-color: #ffcc00; /* Bright gold background on hover */
+    color: #8b0000; /* Dark red text on hover */
 }
 
 footer {
@@ -149,35 +147,6 @@ footer {
     bottom: 0;
     width: 100%;
     flex-shrink: 0;
-}
-
-/* Adding styles for the table */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
-    background-color: #ffffff; /* White background */
-}
-
-table, th, td {
-    border: 2px solid #8b0000;
-    color: #000000; /* Black text */
-}
-
-th, td {
-    padding: 10px;
-    text-align: left;
-    font-size: 1.1em;
-}
-
-th {
-    background-color: #8b0000;
-    color: #ffd700;
-}
-
-/* Removing gray background from rows */
-tbody tr:nth-child(even) {
-    background-color: #ffffff; /* White background */
 }
 
 /* Mobile-friendly styles */
@@ -205,26 +174,6 @@ tbody tr:nth-child(even) {
         font-size: 1.2em;
     }
 
-    .tattoo-style {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .tattoo-image {
-        max-width: 100%;
-        margin: 0 0 10px 0;
-    }
-
-    .gallery {
-        flex-direction: column;
-        gap: 5px;
-    }
-
-    .gallery img {
-        max-width: 100%;
-        margin: 0;
-    }
-
     main {
         padding: 10px;
     }
@@ -233,7 +182,17 @@ tbody tr:nth-child(even) {
         padding: 20px 0;
     }
 
-    table, th, td {
-        font-size: 1em; /* Adjusting text size in table for mobile */
+    .contact-form {
+        gap: 10px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 0.9em;
+    }
+
+    .contact-form button {
+        font-size: 0.9em;
+        padding: 8px 16px;
     }
 }
