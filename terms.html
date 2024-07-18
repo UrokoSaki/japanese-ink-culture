@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Terms of Service - Japanese Ink Culture</title>
+
+    <!-- Preload CSS and Fonts -->
     <link rel="preload" href="styles.css" as="style">
     <link rel="stylesheet" href="styles.css">
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -30,7 +32,7 @@
     <link rel="canonical" href="https://www.japaneseinkculture.com/terms.html">
 
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L008T1RWCM"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L008T1RWCM" defer></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -68,10 +70,10 @@
 <body>
     <header>
         <h1>Terms of Service</h1>
-        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <div class="menu-icon" onclick="toggleMenu()" aria-label="Toggle menu">☰</div>
     </header>
     <nav>
-        <ul class="nav-links">
+        <ul class="nav-links" aria-label="Main navigation">
             <li><a href="index.html">Home</a></li>
             <li><a href="types.html">Types of Japanese Tattoos</a></li>
             <li><a href="meanings.html">Tattoo Meanings</a></li>
