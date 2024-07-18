@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tattoo Meanings - Japanese Ink Culture</title>
+
+    <!-- Preload CSS and Fonts -->
     <link rel="preload" href="styles.css" as="style">
     <link rel="stylesheet" href="styles.css">
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -72,10 +74,10 @@
 <body>
     <header>
         <h1>Japanese Ink Culture</h1>
-        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        <div class="menu-icon" onclick="toggleMenu()" aria-label="Toggle menu">&#9776;</div>
     </header>
     <nav>
-        <ul class="nav-links">
+        <ul class="nav-links" aria-label="Main navigation">
             <li><a href="index.html">Home</a></li>
             <li><a href="types.html">Types of Japanese Tattoos</a></li>
             <li><a href="meanings.html">Tattoo Meanings</a></li>
