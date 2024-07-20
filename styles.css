@@ -78,7 +78,7 @@ main {
     padding: 20px;
     background-color: #ffffff; /* White background */
     color: #000000; /* Black text */
-    max-width: 800px;
+    max-width: 1000px; /* Increased max-width for larger gallery */
     margin: 0 auto;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px; /* Adding rounded corners */
@@ -149,26 +149,22 @@ footer {
     flex-shrink: 0;
 }
 
-/* Styles for tables */
-table.tattoo-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
+/* Styles for gallery */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
 }
 
-table.tattoo-table th, table.tattoo-table td {
-    border: 1px solid #8b0000; /* Dark red border */
-    padding: 10px;
-    text-align: left;
-}
-
-table.tattoo-table th {
-    background-color: #8b0000; /* Dark red background */
-    color: #ffd700; /* Gold text */
-}
-
-table.tattoo-table tbody tr:nth-child(even) {
-    background-color: #f2f2f2; /* Light gray background for even rows */
+.gallery img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #8b0000;
+    padding: 5px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow */
 }
 
 /* Mobile-friendly styles */
