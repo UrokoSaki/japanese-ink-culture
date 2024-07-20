@@ -155,13 +155,24 @@ img {
     height: auto; /* Maintains aspect ratio */
 }
 
+/* סגנון הגלריה */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    justify-items: center; /* יישור התוכן במרכז */
+}
+
+/* סגנון התמונות בגלריה */
 .gallery img {
-    max-width: 200px; /* Defines a maximum width for gallery images */
-    max-height: 200px; /* Defines a maximum height for gallery images */
-    object-fit: cover; /* Ensures the image covers the area without distorting */
+    width: 100%;
+    height: 200px; /* גובה קבוע לתמונות */
+    object-fit: cover; /* חיתוך כדי לשמור על יחס גובה-רוחב */
     border: 2px solid #8b0000;
     padding: 5px;
     background-color: white;
+    border-radius: 5px; /* פינות עגולות */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* הצללה */
 }
 
 /* Mobile-friendly styles */
