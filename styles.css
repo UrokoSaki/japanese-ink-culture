@@ -133,7 +133,7 @@ p {
     align-self: flex-end;
 }
 
-.contact-form button:hover {
+contact-form button:hover {
     background-color: #ffcc00; /* Bright gold background on hover */
     color: #8b0000; /* Dark red text on hover */
 }
@@ -160,8 +160,7 @@ footer {
 .gallery img {
     width: 100%;
     max-width: 200px;
-    height: auto;
-    max-height: 200px; /* Ensure a maximum height */
+    height: 200px; /* Set a fixed height */
     object-fit: cover; /* Ensure image covers the box */
     border: 2px solid #8b0000;
     padding: 5px;
