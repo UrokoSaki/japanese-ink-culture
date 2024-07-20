@@ -149,6 +149,21 @@ footer {
     flex-shrink: 0;
 }
 
+/* Styles for images */
+img {
+    max-width: 100%; /* Ensures images do not overflow their container */
+    height: auto; /* Maintains aspect ratio */
+}
+
+.gallery img {
+    max-width: 200px; /* Defines a maximum width for gallery images */
+    max-height: 200px; /* Defines a maximum height for gallery images */
+    object-fit: cover; /* Ensures the image covers the area without distorting */
+    border: 2px solid #8b0000;
+    padding: 5px;
+    background-color: white;
+}
+
 /* Mobile-friendly styles */
 @media (max-width: 768px) {
     header h1 {
