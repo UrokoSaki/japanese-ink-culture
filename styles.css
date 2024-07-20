@@ -159,10 +159,10 @@ footer {
 
 .gallery img {
     width: 100%;
-    max-width: 300px;
+    max-width: 200px;
     height: auto;
-    max-height: 300px; /* Ensure a maximum height */
-    object-fit: contain; /* Ensure image contains within the box without cutting */
+    max-height: 200px; /* Ensure a maximum height */
+    object-fit: cover; /* Ensure image covers the box */
     border: 2px solid #8b0000;
     padding: 5px;
     background-color: white;
