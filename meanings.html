@@ -66,6 +66,90 @@
             navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
         }
     </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: #8b0000;
+            color: #ffd700;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .menu-icon {
+            display: none;
+            font-size: 30px;
+            cursor: pointer;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #8b0000;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #ffd700;
+            text-decoration: none;
+        }
+        main {
+            padding: 20px;
+        }
+        .page-title {
+            color: #8b0000;
+        }
+        table.tattoo-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 18px;
+            text-align: left;
+        }
+        table.tattoo-table thead tr {
+            background-color: #8b0000;
+            color: #ffd700;
+        }
+        table.tattoo-table th, table.tattoo-table td {
+            border: 1px solid #ddd;
+            padding: 12px 15px;
+        }
+        table.tattoo-table tbody tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        table.tattoo-table tbody tr:hover {
+            background-color: #ddd;
+        }
+        footer {
+            background-color: #8b0000;
+            color: #ffd700;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        @media (max-width: 600px) {
+            .menu-icon {
+                display: block;
+            }
+            nav ul {
+                display: none;
+                flex-direction: column;
+            }
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
