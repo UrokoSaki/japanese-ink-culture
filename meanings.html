@@ -67,45 +67,178 @@
         }
     </script>
     <style>
+        @font-face {
+            font-family: 'Rock Salt';
+            font-display: swap;
+            src: url('https://fonts.gstatic.com/s/rocksalt/v10/MwQ0bhv11fWD6QsAVOZbsA.woff2') format('woff2');
+        }
+
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
             margin: 0;
             padding: 0;
-            color: #333;
+            background-color: #8b0000; /* Dark red background */
+            color: #ffd700; /* Gold text */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            overflow-y: scroll; /* Ensure scroll bar is always visible */
         }
+
         header {
-            background-color: #8b0000;
-            color: #ffd700;
-            padding: 10px 0;
+            background-color: #8b0000; /* Dark red background */
+            color: #ffd700; /* Gold color for header */
+            padding: 20px 0;
             text-align: center;
+            position: relative;
         }
+
+        header h1 {
+            font-family: 'Rock Salt', cursive; /* Unique font */
+            font-size: 2.5em;
+            margin: 0;
+            text-shadow: 2px 2px #000000; /* Adding shadow to header */
+            color: #ffd700; /* Gold color */
+            border: 3px solid #000000; /* Black border */
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.5); /* Transparent black background */
+            display: inline-block;
+        }
+
         .menu-icon {
             display: none;
-            font-size: 30px;
+            font-size: 2em;
             cursor: pointer;
-        }
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-            background-color: #8b0000;
-        }
-        nav ul li {
-            display: inline;
-            margin: 0 15px;
-        }
-        nav ul li a {
             color: #ffd700;
+            padding: 10px;
+        }
+
+        nav {
+            background-color: #8b0000; /* Dark red background */
+            color: #ffd700; /* Gold text */
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav .nav-links {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav .nav-links li {
+            margin: 0 10px;
+        }
+
+        nav .nav-links a {
+            color: #ffd700; /* Gold color */
             text-decoration: none;
+            font-weight: bold;
         }
+
+        nav .nav-links a:hover {
+            color: #ffcc00; /* Bright gold color on hover */
+        }
+
         main {
+            flex: 1;
             padding: 20px;
+            background-color: #ffffff; /* White background */
+            color: #000000; /* Black text */
+            max-width: 1000px; /* Increased max-width for larger gallery */
+            margin: 0 auto;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px; /* Adding rounded corners */
         }
-        .page-title {
-            color: #8b0000;
+
+        h2 {
+            color: #8b0000; /* Dark red for headings */
+            text-align: center;
+            margin-bottom: 20px;
         }
+
+        p {
+            text-align: center;
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .contact-form .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact-form label {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            padding: 10px;
+            border: 2px solid #8b0000;
+            border-radius: 5px;
+            font-size: 1em;
+            color: #000000; /* Black text */
+            background-color: #ffffff; /* White background */
+        }
+
+        .contact-form button {
+            background-color: #8b0000; /* Dark red background */
+            color: #ffd700; /* Gold text */
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 5px;
+            align-self: flex-end;
+        }
+
+        .contact-form button:hover {
+            background-color: #ffcc00; /* Bright gold background on hover */
+            color: #8b0000; /* Dark red text on hover */
+        }
+
+        footer {
+            background-color: #8b0000; /* Dark red background */
+            color: #ffd700; /* Gold color */
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            flex-shrink: 0;
+        }
+
+        /* Styles for gallery */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+            justify-items: center;
+        }
+
+        .gallery img {
+            width: 100%;
+            max-width: 200px;
+            height: 200px; /* Set a fixed height */
+            object-fit: cover; /* Ensure image covers the box */
+            border: 2px solid #8b0000;
+            padding: 5px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow */
+        }
+
+        /* Table styling */
         table.tattoo-table {
             width: 100%;
             border-collapse: collapse;
@@ -113,40 +246,70 @@
             font-size: 18px;
             text-align: left;
         }
+
         table.tattoo-table thead tr {
             background-color: #8b0000;
             color: #ffd700;
         }
+
         table.tattoo-table th, table.tattoo-table td {
             border: 1px solid #ddd;
             padding: 12px 15px;
         }
+
         table.tattoo-table tbody tr:nth-child(even) {
             background-color: #f2f2f2;
         }
+
         table.tattoo-table tbody tr:hover {
             background-color: #ddd;
         }
-        footer {
-            background-color: #8b0000;
-            color: #ffd700;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-        @media (max-width: 600px) {
+
+        /* Mobile-friendly styles */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em; /* Reducing header size for mobile */
+            }
+
             .menu-icon {
                 display: block;
             }
-            nav ul {
+
+            nav .nav-links {
                 display: none;
                 flex-direction: column;
+                align-items: center;
+                width: 100%;
             }
-            nav ul li {
-                display: block;
+
+            nav .nav-links li {
                 margin: 10px 0;
+            }
+
+            nav .nav-links a {
+                font-size: 1.2em;
+            }
+
+            main {
+                padding: 10px;
+            }
+
+            footer {
+                padding: 20px 0;
+            }
+
+            .contact-form {
+                gap: 10px;
+            }
+
+            .contact-form input,
+            .contact-form textarea {
+                font-size: 0.9em;
+            }
+
+            .contact-form button {
+                font-size: 0.9em;
+                padding: 8px 16px;
             }
         }
     </style>
