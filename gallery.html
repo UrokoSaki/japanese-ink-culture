@@ -80,11 +80,61 @@
                 imgElement.src = `images/gallery/${image}`;
                 imgElement.alt = 'Tattoo Image';
                 imgElement.classList.add('gallery-image');
+                imgElement.addEventListener('click', function() {
+                    openOverlay(image);
+                });
                 galleryContainer.appendChild(imgElement);
             });
         }
         document.addEventListener('DOMContentLoaded', loadGallery);
+        
+        // Function to open overlay
+        function openOverlay(image) {
+            const overlay = document.getElementById('overlay');
+            const overlayImage = document.getElementById('overlay-image');
+            overlayImage.src = `images/gallery/${image}`;
+            overlay.style.display = 'block';
+        }
+
+        // Function to close overlay
+        function closeOverlay() {
+            const overlay = document.getElementById('overlay');
+            overlay.style.display = 'none';
+        }
     </script>
+    <style>
+        /* Add your CSS styles here */
+        .gallery-image {
+            width: 200px;
+            height: auto;
+            cursor: pointer;
+            margin: 10px;
+        }
+        #overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+        #overlay img {
+            max-width: 90%;
+            max-height: 90%;
+        }
+        #overlay .close-btn {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            font-size: 30px;
+            color: #fff;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -109,5 +159,9 @@
     <footer>
         <p>&copy; 2024 Japanese Ink Culture | <a href="privacy.html" style="color: #ffd700;">Privacy Policy</a> | <a href="terms.html" style="color: #ffd700;">Terms of Use</a></p>
     </footer>
+    <div id="overlay" onclick="closeOverlay()">
+        <span class="close-btn" onclick="closeOverlay()">&times;</span>
+        <img id="overlay-image" src="" alt="Enlarged Tattoo Image">
+    </div>
 </body>
 </html>
