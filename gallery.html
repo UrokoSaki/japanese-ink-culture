@@ -93,7 +93,7 @@
             const overlay = document.getElementById('overlay');
             const overlayImage = document.getElementById('overlay-image');
             overlayImage.src = `images/gallery/${image}`;
-            overlay.style.display = 'block';
+            overlay.style.display = 'flex';
         }
 
         // Function to close overlay
@@ -121,10 +121,12 @@
             justify-content: center;
             align-items: center;
             z-index: 1000;
+            display: flex; /* מרכז את התמונה אנכית ואופקית */
         }
         #overlay img {
             max-width: 90%;
             max-height: 90%;
+            margin: auto; /* מבטיח שהתמונה תישאר במרכז גם במקרים של שינוי גודל */
         }
         #overlay .close-btn {
             position: absolute;
