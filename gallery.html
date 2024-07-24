@@ -61,10 +61,12 @@
                 });
             }
         });
+
         function toggleMenu() {
             const navLinks = document.querySelector('.nav-links');
             navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
         }
+
         // Function to dynamically load images
         function loadGallery() {
             const galleryContainer = document.getElementById('gallery-container');
@@ -121,12 +123,11 @@
             justify-content: center;
             align-items: center;
             z-index: 1000;
-            display: flex; /* מרכז את התמונה אנכית ואופקית */
+            display: flex;
         }
         #overlay img {
             max-width: 90%;
             max-height: 90%;
-            margin: auto; /* מבטיח שהתמונה תישאר במרכז גם במקרים של שינוי גודל */
         }
         #overlay .close-btn {
             position: absolute;
